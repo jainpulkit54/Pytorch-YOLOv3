@@ -56,7 +56,12 @@ For a detailed description of the arguments, kindly refer to the <code>detect.py
 
 For a detailed description of the arguments, kindly refer to the <code>test.py</code> file.
 
-## Other Codes
+The performance of the model obtained using the weights file provided in this repository is:<br>
+|Model|mAP @ 0.5 IOU|
+|-----|---|
+|YOLOv3 @ (800 x 800)|84.53%|
+
+## Other Files
 The files present in the folder <code>data_preparation/</code> are used for dataset preparation (in particular, MOT17Det and MOT20Det).<br>
 The file <code>make_video.py</code> is used to make a video out of the detections obtained.
 
