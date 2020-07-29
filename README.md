@@ -12,7 +12,19 @@ https://pjreddie.com/media/files/darknet53.conv.74
 Some of the results obtained using this model can be found on the following link:<br>
 https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=sharing
 
-## Training the Model
+## Dataset Preparation
+Run the commands below to create a custom model definition, replacing <i>num_classes</i> with the number of classes in your dataset.<br>
+<code>$ cd config</code><br>
+<code>$ bash create_custom_model.sh num_classes</code><br>
+### Classes
+Add class names to <code>data/classes.names</code>. This file should have one class name per row.
+### Image Folder
+Move the images of your dataset to <code>data/images/</code> folder.
+### Annotation Folder
+Move the annotations of your dataset to <code>data/labels/</code> folder.
+### Define Train and Validation Sets
+
+## Train
 <code>usage: train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--use_pretrained_weights USE_PRETRAINED_WEIGHTS]</code><br>
