@@ -42,7 +42,7 @@ In order to track training progress in tensorboard:<br>
 2) Run the command:<br>
 <code>tensorboard --logdir logs</code><br>
 3) Go the browser and type:<br>
-<code>http://localhost:6006</code>
+<code>http://localhost:6006/</code>
 
 ## Inference
 <code>usage: detect.py [-h] [--batch_size BATCH_SIZE] [--image_folder IMAGE_FOLDER]</code><br>
