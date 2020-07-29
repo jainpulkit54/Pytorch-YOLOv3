@@ -36,6 +36,14 @@ In <code>data/train.txt</code> and <code>data/valid.txt</code>, add paths to ima
 
 For a detailed description of the arguments, kindly refer to the <code>train.py</code> file.
 
+### Tensorboard
+In order to track training progress in tensorboard:<br>
+1) Initiate Training and switch to the directory where code is present.<br>
+2) Run the command:<br>
+<code>tensorboard --logdir logs</code><br>
+3) Go the browser and type:<br>
+<code>http://localhost:6006</code>
+
 ## Inference
 <code>usage: detect.py [-h] [--batch_size BATCH_SIZE] [--image_folder IMAGE_FOLDER]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--text_file_path TEXT_FILE_PATH]</code><br>
