@@ -36,5 +36,21 @@ For a detailed description of the arguments, kindly refer to the <code>train.py<
 For a detailed description of the arguments, kindly refer to the <code>detect.py</code> file.
 
 ## Evaluate
+<code>usage: test.py [-h] [--batch_size BATCH_SIZE]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG] [--weights_path WEIGHTS_PATH]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--iou_thresh IOU_THRESH] [--conf_thresh CONF_THRESH]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--nms_thresh NMS_THRESH] [--n_cpu N_CPU]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--inp_img_size INP_IMG_SIZE]</code><br>
+
+For a detailed description of the arguments, kindly refer to the <code>test.py</code> file.
 
 ## Credits
+## YOLOv3: An Incremental Improvement
+<i>Joseph Redmon, Ali Farhadi</i>
+### Abstract
+We present some updates to YOLO! We made a bunch of little design changes to make it better. We also trained this new network that’s pretty swell. It’s a little bigger than last time but more accurate. It’s still fast though, don’t worry. At 320 × 320 YOLOv3 runs in 22 ms at 28.2 mAP, as accurate as SSD but three times faster. When we look at the old .5 IOU mAP detection metric YOLOv3 is quite good. It achieves 57.9 AP50 in 51 ms on a Titan X, compared to 57.5 AP50 in 198 ms by RetinaNet, similar performance but 3.8× faster. As always, all the code is online at<br>
+https://pjreddie.com/darknet/yolo/<br>
+
+<a href = "https://pjreddie.com/media/files/papers/YOLOv3.pdf">[Paper]</a><br>
+<a href = "https://pjreddie.com/darknet/yolo/">[Project Webpage]</a><br>
+<a href = "https://github.com/pjreddie/darknet">[Author's Implementation]</a><br>
