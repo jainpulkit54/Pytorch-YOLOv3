@@ -1,4 +1,3 @@
-# YOLOv3_training_code
 This is the PyTorch implementation of YOLOv3, with support for training, inference and evaluation. The model in this repository has been trained on <a href = "https://motchallenge.net/data/MOT17Det/">MOT17Det</a> and <a href = "https://motchallenge.net/data/MOT20Det/">MOT20Det</a> datasets. Moreover, some parts of the code has been taken from <a href = "https://github.com/eriklindernoren/PyTorch-YOLOv3">this repository</a>.
 
 ## Weights File
@@ -14,7 +13,6 @@ Some of the results obtained using this model can be found on the following link
 https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=sharing
 
 ## Training the Model
-
 <code>usage: train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--use_pretrained_weights USE_PRETRAINED_WEIGHTS]</code><br>
@@ -27,6 +25,15 @@ https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=shari
 For a detailed description of the arguments, kindly refer to the <code>train.py</code> file.
 
 ## Inference
+<code>usage: detect.py [-h] [--batch_size BATCH_SIZE] [--image_folder IMAGE_FOLDER]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--text_file_path TEXT_FILE_PATH]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--weights_path WEIGHTS_PATH] [--class_path CLASS_PATH]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--conf_thresh CONF_THRESH] [--nms_thresh NMS_THRESH]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--n_cpu N_CPU] [--inp_img_size INP_IMG_SIZE]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--display DISPLAY]</code><br>
+
+For a detailed description of the arguments, kindly refer to the <code>detect.py</code> file.
 
 ## Evaluate
 
