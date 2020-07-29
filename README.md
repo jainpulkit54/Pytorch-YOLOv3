@@ -12,3 +12,11 @@ https://pjreddie.com/media/files/darknet53.conv.74
 ## Detections Visualization
 Some of the results obtained using this model can be found on the following link:<br>
 https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=sharing
+
+## Training the Model
+
+## Inference
+
+## Evaluate
+
+## Credits
