@@ -15,6 +15,17 @@ https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=shari
 
 ## Training the Model
 
+<code>usage: train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--use_pretrained_weights USE_PRETRAINED_WEIGHTS]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--pretrained_weights PRETRAINED_WEIGHTS]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--use_pretrained_backbone USE_PRETRAINED_BACKBONE]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--pretrained_backbone PRETRAINED_BACKBONE] [--n_cpu N_CPU]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--inp_img_size INP_IMG_SIZE]</code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--multiscale_training MULTISCALE_TRAINING]</code><br>
+
+For a detailed description of the arguments, kindly refer to the <code>train.py</code> file.
+
 ## Inference
 
 ## Evaluate
