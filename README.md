@@ -21,9 +21,9 @@ Add class names to <code>data/classes.names</code>. This file should have one cl
 ### Image Folder
 Move the images of your dataset to <code>data/images/</code> folder.
 ### Annotation Folder
-Move the annotations of your dataset to <code>data/labels/</code> folder.
+Move the annotations of your dataset to <code>data/labels/</code> folder. The dataloader in this repository expects that the annotation file corresponding to the image <code>data/images/train.jpg</code> has the path <code>data/labels/train.txt</code>. Each row in the annotation file should define one bounding box, using the syntax <code>label_id x_center y_center width height</code>. The coordinates should be scaled to <code>[0, 1]</code>, and the label_id should be zero-indexed and correspond to the row number of the class name in <code>data/classes.names</code>
 ### Define Train and Validation Sets
-
+In <code>data/train.txt</code> and <code>data/valid.txt</code>, add paths to images that will be used as train and validation data respectively.
 ## Train
 <code>usage: train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]</code><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--network_config NETWORK_CONFIG]</code><br>
