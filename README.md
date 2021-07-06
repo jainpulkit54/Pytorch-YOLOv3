@@ -1,16 +1,8 @@
-This is the PyTorch implementation of YOLOv3, with support for training, inference and evaluation. The model in this repository has been trained on <a href = "https://motchallenge.net/data/MOT17Det/">MOT17Det</a> and <a href = "https://motchallenge.net/data/MOT20Det/">MOT20Det</a> datasets. Moreover, some parts of the code has been taken from <a href = "https://github.com/eriklindernoren/PyTorch-YOLOv3">this repository</a>.
-
-## Weights File
-The weights file obtained by training YOLOv3 using this repository can be obtained using the following link:<br>
-https://drive.google.com/file/d/1-CB_Qz2W-zMUny4l9mjHEJKqp5jZgDS-/view?usp=sharing
+This is the PyTorch implementation of YOLOv3, with support for training, inference and evaluation. Some parts of the code has been taken from <a href = "https://github.com/eriklindernoren/PyTorch-YOLOv3">this repository</a>.
 
 ## Darknet-53 Feature Extractor weights file
 The model is trained by making use of transfer learning i.e., a feature extractor network pretrained on 1000 class Imagenet dataset has been used, the weights of which have been provided by the author's of YOLOv3 and can be downloaded using the following link:<br>
 https://pjreddie.com/media/files/darknet53.conv.74
-
-## Detections Visualization
-Some of the results obtained using this model can be found on the following link:<br>
-https://drive.google.com/file/d/1YhGsXUKkmVWvByxZYcsXWjxrjveso476/view?usp=sharing
 
 ## Dataset Preparation
 Run the commands below to create a custom model definition, replacing <i>num_classes</i> with the number of classes in your dataset.<br>
@@ -63,11 +55,6 @@ For a detailed description of the arguments, kindly refer to the <code>detect.py
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <code>[--inp_img_size INP_IMG_SIZE]</code><br>
 
 For a detailed description of the arguments, kindly refer to the <code>test.py</code> file.
-
-The performance of the model obtained using the weights file provided in this repository is:<br>
-|Model|mAP @ 0.5 IOU|
-|-----|---|
-|YOLOv3 @ (800 x 800)|84.53%|
 
 ## Other Files
 The files present in the folder <code>data_preparation/</code> are used for dataset preparation (in particular, MOT17Det and MOT20Det).<br>
